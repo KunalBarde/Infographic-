@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>How Much Time Do You Have?</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/stylesheet.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="js/d3pie.min.js"></script>
+        <script src="js/timer.js"></script>
+        <script src="js/balldropping.js"></script>
+        <script src="js/mainboxfixing.js"></script>        
+    </head>
+
+    <body>
+    	<div class="container">
+    		<div class="row" id="heading">
+    			<div class="col-lg-2" id="peopleimg">
+    				<img src="img/peoplepic.png" id="pplpic">
+    			</div>
+     			<div class="col-lg-6" id="title">
+     				<span id="firstrowtitle">HOW MUCH <span id="timetitle">TIME</span> DO YOU</span>
+     				<br>
+     				<span id="secondrowtitle">REALLY HAVE?</span>
+    			</div>
+    			<div class="col-lg-1" id="clockimg">
+    				<img src="img/clock.png" id="clockpic">
+    			</div>
+    			<div class="col-lg-3" id="timerdiv">
+    				<span id="tenmintimer"></span>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-lg-12" id="mainbox">
+    				<div class="col-lg-3" id="leftcol">
+    					<span id="lcti"><u>WHO ARE <span id="you">YOU</span>?</u></span>
+    					<br>
+    					<button type="button" class="btn btn-info btn-lg" id="wmbtn" onclick="replacescreen('pc1')">WHITE MAN</button>
+    					<br>
+    					<button type="button" class="btn btn-info btn-lg" id="wwmbtn" onclick="replacescreen('pc2')">WHITE WOMAN</button>
+    					<br>
+    	    			<button type="button" class="btn btn-info btn-lg" id="hmbtn" onclick="replacescreen('pc3')">HISPANIC MAN</button>
+    	    			<br>
+        				<button type="button" class="btn btn-info btn-lg" id="hwmbtn" onclick="replacescreen('pc4')">HISPANIC WOMAN</button>
+        				<br>
+    					<button type="button" class="btn btn-info btn-lg" id="bmbtn" onclick="replacescreen('pc5')">BLACK MAN</button>
+    					<br>
+    					<button type="button" class="btn btn-info btn-lg" id="bwmbtn" onclick="replacescreen('pc6')">BLACK WOMAN</button>
+                        <br>
+                        <button type="button" class="btn btn-info btn-lg" id="ambtn" onclick="replacescreen('pc7')">ASIAN MAN</button>
+                        <br>
+                        <button type="button" class="btn btn-info btn-lg" id="awmbtn" onclick="replacescreen('pc8')">ASIAN WOMAN</button>
+
+    				</div>
+    				<div class="col-lg-5" id="midcol">
+    					<img src="img/jar.png" id="jarpic">    
+    				</div>
+    				<div class="col-lg-4" id="rightcol">
+    					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    					<span id="fline">IMAGINE</span>
+    					<br><br><br><br><br><br><br><br>
+    					<span id="sline">IF YOUR ENTIRE</span>
+    					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    					<span id="tline">LIFE</span>
+    					<br><br><br><br><br><br>
+    					<span id="ftline">WAS REPRESENTED BY</span>
+    					<br><br><br><br><br><br><br><br><br><br>
+    					<span id="filine">THIS JAR &</span>
+    					<br><br><br><br><br><br><br>
+    					<span id="siline">THE EMPTY SPACE</span>
+    					<br><br><br><br><br><br><br>
+    					<span id="seline">WAS ALL YOU HAD</span>
+    					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    					<span id="eline">LEFT...</span>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </body>
+</html>
