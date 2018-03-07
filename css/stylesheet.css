@@ -114,48 +114,6 @@ button
 	line-height: 3px;
 }
 
-#fline
-{
-	font-size: 650%;
-	display: inline-block;
-}
-
-#sline
-{
-	font-size: 350%;
-	display: inline-block;
-}
-#tline
-{
-	font-size: 1358%;
-	color: #007Ba7;
-	display: inline-block;
-}
-#ftline
-{
-	font-size: 240%;
-	display: inline-block;
-}
-#filine
-{
-	font-size: 490%;
-	display: inline-block;
-}
-#siline
-{
-	font-size: 300%;
-	display: inline-block;
-}
-#seline
-{
-	font-size: 300%;
-	display: inline-block;
-}
-#eline
-{
-	font-size: 900%;
-	display: inline-block;
-}
 .piechart
 {
 	display: inline;
@@ -188,4 +146,55 @@ canvas
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: left;
+}
+
+#pc1 
+{
+	float:left;
+	margin-left: 50px;
+
+}
+
+/* Words */
+
+.words
+{
+	display: inline;
+	line-height: 0.8em;
+}
+
+#fline
+{
+	font-size: 6.5em;
+}
+
+#sline
+{
+	font-size: 3.5em;
+}
+
+#tline
+{
+	font-size: 13.6em;
+	color: #007Ba7;
+}
+
+#ftline
+{
+	font-size: 2.4em;
+}
+
+#filine
+{
+	font-size: 5em;
+}
+
+#siline, #seline
+{
+	font-size: 3em;
+}
+
+#eline
+{
+	font-size: 9em;
 }
