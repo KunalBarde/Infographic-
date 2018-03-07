@@ -1,123 +1,97 @@
-@font-face
-{
+@font-face {
 	font-family: helv;
 	src: url(../fonts/HelveticaNeue-CondensedBold.otf);
 }
 
-body 
-{
+body {
 	font-family: helv;
+	text-align: center;
 }
 
-.container
-{
+.container {
 	margin-top:20px;
 }
 
-body 
-{
-    text-align: center;
-}
-
-img 
-{
+img {
 	display:inline;
 	vertical-align: middle;
 }
 
-button
-{
-	font-size: 150%;
+/* Main Screen */
+
+button {
+	font-size: 1.5em;
 	box-sizing: border-box;
-	width:200px;
+	width: 12em;
 }
 
-#pplpic
-{
+#pplpic {
 	width: 120%;
 }
 
-#title
-{
-	line-height: 40px;
+#title {
+	line-height: 3em;
 }
 
-#firstrowtitle
-{
-	font-size:344%;
+#firstrowtitle {
+	font-size: 3.5em;
 }
 
-#timetitle
-{
+#timetitle {
 	color: #B2D7DD;
 }
 
-#secondrowtitle
-{
-	font-size:600%;
+#secondrowtitle {
+	font-size: 6em;
 }
 
-#clockpic
-{
-	width:100%;
+#clockpic {
+	width: 100%;
 	padding-bottom: 40%;
 	padding-top: 40%;
 }
 
-#timerdiv
-{
-	font-size:600%;
+#timerdiv {
+	font-size: 6em;
 	color: red;
 	font-family: "Courier";
 }
 
-#mainbox
-{
+#mainbox {
 	border: solid;
 	border-width: 3pt;
 }
 
-#timeup
-{
-	font-size:800%;
+#timeup {
+	font-size: 8em;
 	color: red;
 }
 
-#leftcol
-{
+#leftcol {
 	padding-top: 2%;
 	padding-bottom: 2%;
-	line-height: 60px;
+	line-height: 4em;
 }
 
-#lcti
-{
-	font-size: 250%;
+#lcti {
+	font-size: 2.5em;
 }
 
-#you
-{
+#you {
 	color: #B2D7DD;
 }
 
-#jarpic
-{
+#jarpic {
 	padding-top: 8%;
 	padding-bottom: 5%;
 	width: 90%;
 }
 
-#rightcol
-{
-	padding-top: 2%;
-	padding-bottom: 2%;
-	line-height: 3px;
-}
+/* Graph */
 
-.piechart
-{
-	display: inline;
-	
+.piechart {
+	display: block;
+
 }
 
 #brow
@@ -146,18 +120,19 @@ canvas
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: left;
+	display: inline-block;
+	position: relative;
 }
 
-#pc1 
-{
-	float:left;
-	margin-left: 50px;
-
-}
 
 /* Words */
 
-.words
+#rightcol
+{
+	padding: 2em;
+}
+
+.words span
 {
 	display: inline;
 	line-height: 0.8em;

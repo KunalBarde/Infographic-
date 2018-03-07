@@ -1,24 +1,21 @@
-function clearmainbox()
-{
+function clearmainbox() {
 	document.getElementById("mainbox").innerHTML = "";
 }
 
-function clearmainwithblowup()
-{
+function clearmainwithblowup() {
 	clearmainbox();
 	document.getElementById("mainbox").innerHTML = "<span id='timeup'>YOUR TIME IS UP!</span>";
 }
 
 
-function updatebottom(section, demographic)
-{
+function updatebottom(section, demographic) {
 	document.getElementById("demographic").innerHTML = demographic.toUpperCase();
 	document.getElementById("timespent").innerHTML = section.data.value;
 	document.getElementById("activity").innerHTML = section.data.label.toUpperCase();
 }
 
-function replacescreen(data)
-{
+function replacescreen(data) {
+	
 	clearmainbox();
 
 	var toprow = document.createElement("div");
@@ -46,9 +43,10 @@ function replacescreen(data)
 	var background = new Image();
 	background.src = "img/jar.png";
 	document.getElementById("rightcolumn").appendChild(canvas);
-	background.onload = function()
-	{
+	background.onload = function() {
 		ctx.drawImage(background, 0, 0);
+		ctx.canvas.width  = window.outerWidth;
+  		ctx.canvas.height = window.outerHeight;
 	}
 
 	var chart = document.createElement("div");
@@ -78,8 +76,8 @@ function replacescreen(data)
 			"location": "bottom-left"
 		},
 		"size": {
-			"canvasHeight": 400,
-			"canvasWidth": 1000,
+			"canvasHeight": $('#piechart').outerHeight(),
+			"canvasWidth": $('#piechart').outerWidth(),
 			"pieInnerRadius": "39%",
 			"pieOuterRadius": "90%"
 		},
@@ -206,8 +204,8 @@ function replacescreen(data)
 			"location": "bottom-left"
 		},
 		"size": {
-			"canvasHeight": 400,
-			"canvasWidth": 1000,
+			"canvasHeight": $('#piechart').outerHeight(),
+			"canvasWidth": $('#piechart').outerWidth(),
 			"pieInnerRadius": "39%",
 			"pieOuterRadius": "90%"
 		},
@@ -334,8 +332,8 @@ function replacescreen(data)
 			"location": "bottom-left"
 		},
 		"size": {
-			"canvasHeight": 400,
-			"canvasWidth": 1000,
+			"canvasHeight": $('#piechart').outerHeight(),
+			"canvasWidth": $('#piechart').outerWidth(),
 			"pieInnerRadius": "39%",
 			"pieOuterRadius": "90%"
 		},
@@ -462,8 +460,8 @@ function replacescreen(data)
 			"location": "bottom-left"
 		},
 		"size": {
-			"canvasHeight": 400,
-			"canvasWidth": 1000,
+			"canvasHeight": $('#piechart').outerHeight(),
+			"canvasWidth": $('#piechart').outerWidth(),
 			"pieInnerRadius": "39%",
 			"pieOuterRadius": "90%"
 		},
@@ -590,8 +588,8 @@ function replacescreen(data)
 			"location": "bottom-left"
 		},
 		"size": {
-			"canvasHeight": 400,
-			"canvasWidth": 1000,
+			"canvasHeight": $('#piechart').outerHeight(),
+			"canvasWidth": $('#piechart').outerWidth(),
 			"pieInnerRadius": "39%",
 			"pieOuterRadius": "90%"
 		},
@@ -718,8 +716,8 @@ function replacescreen(data)
 			"location": "bottom-left"
 		},
 		"size": {
-			"canvasHeight": 400,
-			"canvasWidth": 1000,
+			"canvasHeight": $('#piechart').outerHeight(),
+			"canvasWidth": $('#piechart').outerWidth(),
 			"pieInnerRadius": "39%",
 			"pieOuterRadius": "90%"
 		},
@@ -846,8 +844,8 @@ function replacescreen(data)
 			"location": "bottom-left"
 		},
 		"size": {
-			"canvasHeight": 400,
-			"canvasWidth": 1000,
+			"canvasHeight": $('#piechart').outerHeight(),
+			"canvasWidth": $('#piechart').outerWidth(),
 			"pieInnerRadius": "39%",
 			"pieOuterRadius": "90%"
 		},
@@ -974,8 +972,8 @@ function replacescreen(data)
 			"location": "bottom-left"
 		},
 		"size": {
-			"canvasHeight": 400,
-			"canvasWidth": 1000,
+			"canvasHeight": $('#piechart').outerHeight(),
+			"canvasWidth": $('#piechart').outerWidth(),
 			"pieInnerRadius": "39%",
 			"pieOuterRadius": "90%"
 		},
