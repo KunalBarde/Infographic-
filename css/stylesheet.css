@@ -57,7 +57,7 @@ button {
 	font-family: "Courier";
 }
 
-#mainbox, svg, canvas { /* Border */
+#mainbox {
 	border: solid;
 	border-width: 3pt;
 }
@@ -118,6 +118,11 @@ svg {
 	margin: 1em;
 	width: 56em;
 	height: 40em;
+}
+
+svg, canvas {
+	border: solid;
+	border-width: 2.5pt;
 }
 
 /* Words */
