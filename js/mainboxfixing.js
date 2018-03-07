@@ -45,8 +45,8 @@ function replacescreen(data) {
 	document.getElementById("rightcolumn").appendChild(canvas);
 
 	background.onload = function() {
-		ctx.canvas.width  = $('#rightcolumn').innerWidth() * 9/10;
-  		ctx.canvas.height = $('#leftcolumn').innerHeight() * 9/10;
+		ctx.canvas.width  = $('#rightcolumn').innerWidth() * 8/10;
+  		ctx.canvas.height = $('#leftcolumn').innerHeight() * 8/10;
 		ctx.drawImage(background, 	0, 0, background.width, background.height,  // source rectangle
 									0, 0, canvas.width, canvas.height); 		// destination rectangle
 	}
