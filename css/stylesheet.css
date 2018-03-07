@@ -1,3 +1,14 @@
+@font-face
+{
+	font-family: helv;
+	src: url(../fonts/HelveticaNeue-CondensedBold.otf);
+}
+
+body 
+{
+	font-family: helv;
+}
+
 .container
 {
 	margin-top:20px;
@@ -5,7 +16,6 @@
 
 body 
 {
-    font-family: "HelveticaNeue-CondensedBold", "HelveticaNeue-Bold", "Helvetica", sans-serif;
     text-align: center;
 }
 
