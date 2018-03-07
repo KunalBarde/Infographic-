@@ -30,12 +30,12 @@ function replacescreen(data) {
 
 	var leftcolumn = document.createElement("div");
 	leftcolumn.id = "leftcolumn";
-	leftcolumn.classList.add("col-xs-6");
+	leftcolumn.classList.add("col-xs-9");
 	document.getElementById("trow").appendChild(leftcolumn);
 
 	var rightcolumn = document.createElement("div");
 	rightcolumn.id = "rightcolumn";
-	rightcolumn.classList.add("col-xs-6");
+	rightcolumn.classList.add("col-xs-3");
 	document.getElementById("trow").appendChild(rightcolumn);
 
 	var canvas = document.createElement("canvas");
@@ -43,10 +43,12 @@ function replacescreen(data) {
 	var background = new Image();
 	background.src = "img/jar.png";
 	document.getElementById("rightcolumn").appendChild(canvas);
+
 	background.onload = function() {
-		ctx.drawImage(background, 0, 0);
-		ctx.canvas.width  = window.outerWidth;
-  		ctx.canvas.height = window.outerHeight;
+		ctx.canvas.width  = $('#rightcolumn').innerWidth() * 9/10;
+  		ctx.canvas.height = $('#leftcolumn').innerHeight() * 9/10;
+		ctx.drawImage(background, 	0, 0, background.width, background.height,  // source rectangle
+									0, 0, canvas.width, canvas.height); 		// destination rectangle
 	}
 
 	var chart = document.createElement("div");

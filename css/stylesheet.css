@@ -91,85 +91,69 @@ button {
 
 .piechart {
 	display: block;
-
 }
 
-#brow
-{
-	font-size: 400%;
+#brow {
+	font-size: 4em;
 }
 
-#demographic
-{
+#demographic {
 	color: #000099
 }
 
-#timespent
-{
+#timespent {
 	color: #6600cc;
 }
 
-#activity
-{
+#activity {
 	color: #3366ff;
 }
 
-canvas
-{
-	background-image: url("img/jar.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: left;
-	display: inline-block;
-	position: relative;
+canvas {
+	display: block;
 }
 
+svg {
+	width: 100em;
+	height: 40em;
+}
 
 /* Words */
 
-#rightcol
-{
+#rightcol {
 	padding: 2em;
 }
 
-.words span
-{
+.words span {
 	display: inline;
 	line-height: 0.8em;
 }
 
-#fline
-{
+#fline {
 	font-size: 6.5em;
 }
 
-#sline
-{
+#sline {
 	font-size: 3.5em;
 }
 
-#tline
-{
+#tline {
 	font-size: 13.6em;
 	color: #007Ba7;
 }
 
-#ftline
-{
+#ftline {
 	font-size: 2.4em;
 }
 
-#filine
-{
+#filine {
 	font-size: 5em;
 }
 
-#siline, #seline
-{
+#siline, #seline {
 	font-size: 3em;
 }
 
-#eline
-{
+#eline {
 	font-size: 9em;
 }
