@@ -22,23 +22,23 @@ function replacescreen(data)
 	clearmainbox();
 
 	var toprow = document.createElement("div");
-	toprow.class = "row";
+	toprow.classList.add("row");
 	toprow.id = "trow";
 	document.getElementById("mainbox").appendChild(toprow);
 
 	var bottomrow = document.createElement("div");
-	bottomrow.class = "row";
+	bottomrow.classList.add("row");
 	bottomrow.id = "brow";
 	document.getElementById("mainbox").appendChild(bottomrow);
 
 	var leftcolumn = document.createElement("div");
-	leftcolumn.class = "col-xs-6";
 	leftcolumn.id = "leftcolumn";
+	leftcolumn.classList.add("col-xs-6");
 	document.getElementById("trow").appendChild(leftcolumn);
 
 	var rightcolumn = document.createElement("div");
-	rightcolumn.class = "col-xs-6";
 	rightcolumn.id = "rightcolumn";
+	rightcolumn.classList.add("col-xs-6");
 	document.getElementById("trow").appendChild(rightcolumn);
 
 	var canvas = document.createElement("canvas");
@@ -52,7 +52,7 @@ function replacescreen(data)
 	}
 
 	var chart = document.createElement("div");
-	chart.class="piechart";
+	chart.classList.add("piechart");
 	chart.id = data;
 	document.getElementById("leftcolumn").appendChild(chart);
 
