@@ -174,21 +174,10 @@ button
 
 canvas
 {
-
-	/*display: inline;
-	position: absolute;
-	width: 50%;
-	background: white;*/
-	min-height: 400px;
-	width: 600px;
-
 	background-image: url("img/jar.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: left;
-
-
-
 }
 
 
