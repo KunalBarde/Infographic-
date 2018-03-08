@@ -21,21 +21,25 @@ function findfirstopen(arr)
 	}
 }
 
-function postoxy(pos)
+function pos_to_xy(pos)
 {
-	
+	var x = [10, 10];
+	return x;
 }
 
 function dropball(ar)
 {
+	var cv = document.getElementById("")
+	var coin = new Image();
+	coin.src = "img/coin.png";
 	console.log('runs');
 	// find position in stack
 	var pos = findfirstopen(ar);
 	var xy = pos_to_xy(pos);
-	ar[xy[0]][xy[1]] = 1;
+	ar[pos[0]][pos[1]] = 1;
 
 	// drop ball
-
+	ctx.drawImage(coin, xy[0], xy[1], 10, 10);
 }
 
 function dropballs(obj, ar)
