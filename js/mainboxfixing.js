@@ -5,7 +5,18 @@ function dropballs(obj)
 	var pval = obj.data.percentage;
 	per += pval;
 	// clear canvas
-	var ctx = document.getElementById("cvas").getContext('2d');
+	var background = new Image();
+	background.src = "img/jar.png";
+	canvas = document.getElementById("cvas");
+	var ctx = canvas.getContext('2d');
+	ctx.drawImage(background, 	0, 0, background.width, background.height,  // source rectangle
+								0, 0, canvas.width, canvas.height); 		// destination rectangle
+	var coins = new Image();
+	coins.src = "img/coin.png";
+	var pat = ctx.createPattern(coins, "repeat");
+	ctx.rect(30, per * (canvas.height - 50), canvas.length, per * (canvas.height - 50));
+	ctx.fillStyle = pat;
+	ctx.fill();
 }
 
 
