@@ -1,3 +1,55 @@
+var numofrows = 10;
+var numofcolumns = 6;
+
+var stack = new Array(numofrows);
+for (var i = 0; i < numofrows; i++)
+{
+	stack[i] = new Array(numofcolumns);
+}
+
+function findfirstopen(arr) 
+{
+	for (var i = numofrows - 1; i >= 0; i--) 
+	{
+		for (var j = numofcolumns - 1; j >= 0; j--) 
+		{
+			if (!arr[i][j])
+			{
+				return [i, j];
+			}
+		}
+	}
+}
+
+function postoxy(pos)
+{
+	
+}
+
+function dropball(ar)
+{
+	console.log('runs');
+	// find position in stack
+	var pos = findfirstopen(ar);
+	var xy = pos_to_xy(pos);
+	ar[xy[0]][xy[1]] = 1;
+
+	// drop ball
+
+}
+
+function dropballs(obj, ar)
+{
+	// find number of balls
+	var numb = Math.ceil(obj.data.value * 2);
+	for (var j = 0; j < numb; j++)
+	{
+		setTimeout(dropball(ar), 200);
+	}
+
+}
+
+
 function clearmainbox() {
 	document.getElementById("mainbox").innerHTML = "";
 }
@@ -30,12 +82,12 @@ function replacescreen(data) {
 
 	var leftcolumn = document.createElement("div");
 	leftcolumn.id = "leftcolumn";
-	leftcolumn.classList.add("col-xs-9");
+	leftcolumn.classList.add("col-xs-7");
 	document.getElementById("trow").appendChild(leftcolumn);
 
 	var rightcolumn = document.createElement("div");
 	rightcolumn.id = "rightcolumn";
-	rightcolumn.classList.add("col-xs-3");
+	rightcolumn.classList.add("col-xs-5");
 	document.getElementById("trow").appendChild(rightcolumn);
 
 	var canvas = document.createElement("canvas");
@@ -45,8 +97,8 @@ function replacescreen(data) {
 	document.getElementById("rightcolumn").appendChild(canvas);
 
 	background.onload = function() {
-		ctx.canvas.width  = $('#rightcolumn').innerWidth() * 8/10;
-  		ctx.canvas.height = $('#leftcolumn').innerHeight() * 8/10;
+		ctx.canvas.width  = $('#rightcolumn').innerWidth() * 7/10;
+  		ctx.canvas.height = $('#leftcolumn').innerHeight() * 9/10;
 		ctx.drawImage(background, 	0, 0, background.width, background.height,  // source rectangle
 									0, 0, canvas.width, canvas.height); 		// destination rectangle
 	}
@@ -181,7 +233,7 @@ function replacescreen(data) {
 			onClickSegment: function(a) 
 			{
 				updatebottom(a, "WHITE MEN");
-				dropballs(a);
+				dropballs(a, stack);
 			}
 		}
 	});
@@ -309,7 +361,7 @@ function replacescreen(data) {
 			onClickSegment: function(a) 
 			{
 				updatebottom(a, "WHITE WOMEN");
-				dropballs(a);
+				dropballs(a, stack);
 			}
 		}
 	});
@@ -437,7 +489,7 @@ function replacescreen(data) {
 			onClickSegment: function(a) 
 			{
 				updatebottom(a, "BLACK MEN");
-				dropballs(a);
+				dropballs(a, stack);
 			}
 		}
 	});
@@ -565,7 +617,7 @@ function replacescreen(data) {
 			onClickSegment: function(a) 
 			{
 				updatebottom(a, "BLACK WOMEN");
-				dropballs(a);
+				dropballs(a, stack);
 			}
 		}
 	});
@@ -693,7 +745,7 @@ function replacescreen(data) {
 			onClickSegment: function(a) 
 			{
 				updatebottom(a, "ASIAN MEN");
-				dropballs(a);
+				dropballs(a, stack);
 			}
 		}
 	});
@@ -821,7 +873,7 @@ function replacescreen(data) {
 			onClickSegment: function(a) 
 			{
 				updatebottom(a, "ASIAN WOMEN");
-				dropballs(a);
+				dropballs(a, stack);
 			}
 		}
 	});
@@ -949,7 +1001,7 @@ function replacescreen(data) {
 			onClickSegment: function(a) 
 			{
 				updatebottom(a, "HISPANIC MEN");
-				dropballs(a);
+				dropballs(a, stack);
 			}
 		}
 	});
@@ -1077,7 +1129,7 @@ function replacescreen(data) {
 			onClickSegment: function(a) 
 			{
 				updatebottom(a, "HISPANIC WOMEN");
-				dropballs(a);
+				dropballs(a, stack);
 			}
 		}
 	});
