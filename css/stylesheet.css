@@ -120,10 +120,6 @@ svg {
 	height: 40em;
 }
 
-svg, canvas {
-	border: solid;
-	border-width: 2.5pt;
-}
 
 /* Words */
 

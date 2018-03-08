@@ -158,7 +158,7 @@ function replacescreen(data) {
 		"tooltips": {
 			"enabled": true,
 			"type": "placeholder",
-			"string": "{label}: {value} hours, {percentage}% of the day",
+			"string": "{label}: {percentage}%",
 			"styles": {
 				"font": "helvetica",
 				"fontSize": 24
@@ -286,7 +286,7 @@ function replacescreen(data) {
 		"tooltips": {
 			"enabled": true,
 			"type": "placeholder",
-			"string": "{label}: {value} hours, {percentage}% of the day",
+			"string": "{label}: {percentage}%",
 			"styles": {
 				"font": "helvetica",
 				"fontSize": 24
@@ -414,7 +414,7 @@ function replacescreen(data) {
 		"tooltips": {
 			"enabled": true,
 			"type": "placeholder",
-			"string": "{label}: {value} hours, {percentage}% of the day",
+			"string": "{label}: {percentage}%",
 			"styles": {
 				"font": "helvetica",
 				"fontSize": 24
@@ -542,7 +542,7 @@ function replacescreen(data) {
 		"tooltips": {
 			"enabled": true,
 			"type": "placeholder",
-			"string": "{label}: {value} hours, {percentage}% of the day",
+			"string": "{label}: {percentage}%",
 			"styles": {
 				"font": "helvetica",
 				"fontSize": 24
@@ -670,7 +670,7 @@ function replacescreen(data) {
 		"tooltips": {
 			"enabled": true,
 			"type": "placeholder",
-			"string": "{label}: {value} hours, {percentage}% of the day",
+			"string": "{label}: {percentage}%",
 			"styles": {
 				"font": "helvetica",
 				"fontSize": 24
@@ -798,7 +798,7 @@ function replacescreen(data) {
 		"tooltips": {
 			"enabled": true,
 			"type": "placeholder",
-			"string": "{label}: {value} hours, {percentage}% of the day",
+			"string": "{label}: {percentage}%",
 			"styles": {
 				"font": "helvetica",
 				"fontSize": 24
@@ -926,7 +926,7 @@ function replacescreen(data) {
 		"tooltips": {
 			"enabled": true,
 			"type": "placeholder",
-			"string": "{label}: {value} hours, {percentage}% of the day",
+			"string": "{label}: {percentage}%",
 			"styles": {
 				"font": "helvetica",
 				"fontSize": 24
@@ -1054,7 +1054,7 @@ function replacescreen(data) {
 		"tooltips": {
 			"enabled": true,
 			"type": "placeholder",
-			"string": "{label}: {value} hours, {percentage}% of the day",
+			"string": "{label}: {percentage}%",
 			"styles": {
 				"font": "helvetica",
 				"fontSize": 24
